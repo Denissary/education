@@ -1,0 +1,42 @@
+site_name: test test                   #имя вашего сайта
+site_author: denis                          #ваше имя
+nav:                                      #расположение всех ваших файлов
+  - Главная: index.md
+  - How to:
+    - Create a new document: src/managing/create.md
+    - Download a document: src/managing/download.md
+    - Print a document: src/managing/print.md
+    - Share a document: src/managing/share.md
+    - Manage page settings: src/managing/page.md
+    - Format a text: src/managing/format.md
+    - Insert different types of content: src/managing/content.md
+    - Manage add-ons: src/managing/addons.md
+
+
+
+theme:
+  name: material
+  logo: 'src/img/d.png'                    #путь к лого вашего сайта
+  feature:
+    tabs: false
+  language: 'en'
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.extra
+  - pymdownx.snippets:
+      base_path: docs/src
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+extra_css:
+  - 'stylesheets/extra-page-content.css'
+  - 'https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'
